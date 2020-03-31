@@ -12,7 +12,6 @@ class AddStudent extends Component {
 
     handleSubmit = event => {
         event.preventDefault();
-
         axios.post(`https://jsonplaceholder.typicode.com/users`)
         .then(res =>{
             console.log(res);
